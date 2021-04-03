@@ -44,6 +44,7 @@ def parse_msg(message_content):
         
     if len(args) == 0:
         attr_score = 0
+        adv = 0
     else:
         attr_score = args[0]
 
