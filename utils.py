@@ -16,7 +16,12 @@ An OpenLegend RPG dice bot for Discord servers.
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """        
+from random import randint
+from random import choice
 import xdice
+from math import floor
+import json
+import dotenv
 
 
 def parse_msg(message_content):
@@ -39,7 +44,7 @@ def parse_msg(message_content):
 
     args = [a for a in args if a.lstrip("+-").isdigit()]
 
-    if len(args) < 0 or len(args) > 3:
+    if len(args) == 0 or len(args) > 3:
         return -1
         
     if len(args) == 0:
@@ -172,3 +177,5 @@ def roll_raw(pattern):
     except ValueError:
         return -1
     return xdice_pattern.roll()
+
+
