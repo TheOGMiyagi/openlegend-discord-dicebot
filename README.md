@@ -1,9 +1,9 @@
 # openlegend-discord-dicebot
-An OpenLegend RPG dice bot for Discord servers 
+An [OpenLegend RPG] [1] dice bot for [Discord] [2] servers.
 
 ## Configuration
 
-Set your Discord token in env variable ```DISCORD_OPENLEGEND_BOT_TOKEN```
+Set your Discord Token] [3] in env variable ```DISCORD_OPENLEGEND_BOT_TOKEN```
 
 ## Usage
 
@@ -25,9 +25,16 @@ Flags:
 
 ```/!roll [xdice pattern]```
 
-```xdice pattern```: Given pattern should be as described in [xdice documentation](https://xdice.readthedocs.io/en/latest/dice_notation.html#patterns). Use this to roll "raw", i.e. without any Openlegend RPG specific logic. 
+```xdice pattern```: Given pattern should be as described in [xdice documentation] [4]. Use this to roll "raw", i.e. without any Open Legend RPG specific logic. 
 
 ## Used External Libraries 
 
-- [Rapptz/discord.py](https://github.com/Rapptz/discord.py)
-- [cro-ki/xdice](https://github.com/cro-ki/xdice)
+- [Rapptz/discord.py][5]
+- [cro-ki/xdice] [6]
+
+[1]: https://openlegendrpg.com/
+[2]: https://discord.com/
+[3]: https://discordpy.readthedocs.io/en/stable/discord.html
+[4]: https://xdice.readthedocs.io/en/latest/dice_notation.html#patterns
+[5]: https://github.com/Rapptz/discord.py
+[6]: https://github.com/cro-ki/xdice
